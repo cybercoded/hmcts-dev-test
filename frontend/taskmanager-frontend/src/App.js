@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, Button, Typography, message } from 'antd';
+import { Layout, Button, Typography, message, Image } from 'antd';
 import TaskList from './components/TaskList';
 import TaskForm from './components/TaskForm';
 import RetrieveTaskById from './components/SearchItem';
@@ -43,11 +43,15 @@ function App() {
 
   return (
     <Layout style={{ minHeight: '100vh', width: 1000, margin: '0 auto', padding: 24 }}>
-      <Header style={{ background: '#fff', padding: '0 24px' }}>
-        <Title level={2} style={{ margin: 0, lineHeight: '64px', borderRadius: '10px' }}>
-          Caseworker Task Manager
-        </Title>
-      </Header>
+        <div style={{ textAlign: 'center', marginBottom: 24 }}>
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            style={{ height: 100, width: 200 }}
+            preview={false}
+          />
+        </div>
+
       <Content style={{ padding: 24 }}>
         <div style={{ marginBottom: '20px' }}>
           <RetrieveTaskById onEdit={openEditForm} onSearchActive={setIsSearching} />

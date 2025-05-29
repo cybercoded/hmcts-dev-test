@@ -4,7 +4,7 @@
 ## Base URL
 ```
 
-[http://localhost:8000/api/tasks/](http://localhost:8000/api/tasks/)
+![Task Manager UI](./screenshots/task-manager-ui.png)
 
 
 ## Full documentation at 
